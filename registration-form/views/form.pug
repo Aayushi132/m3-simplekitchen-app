@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    h1 Register to subscribe 
+    form(action="." method="POST" class="form-registration")
+        label(for="name") Name:
+        br
+        input(
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            value=data.name
+
+        )
+        br
+        br
+        label(for="email") Email:
+        br
+        input(
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            value=data.email
+        )
+        br
+        button.submit-button Register
